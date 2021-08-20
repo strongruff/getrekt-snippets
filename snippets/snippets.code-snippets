@@ -1320,43 +1320,43 @@
 	"http.get": {
 		"prefix": "http.get",
 		"body": [
-			"http.get(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.get(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 	"http.post": {
 		"prefix": "http.post",
 		"body": [
-			"http.post(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.post(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 	"http.head": {
 		"prefix": "http.head",
 		"body": [
-			"http.head(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.head(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 	"http.put": {
 		"prefix": "http.put",
 		"body": [
-			"http.put(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.put(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 	"http.delete": {
 		"prefix": "http.delete",
 		"body": [
-			"http.delete(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.delete(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 	"http.options": {
 		"prefix": "http.options",
 		"body": [
-			"http.options(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.options(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 	"http.patch": {
 		"prefix": "http.patch",
 		"body": [
-			"http.patch(${1:url}, ${2:opt-[options]}, ${3:callback})"
+			"http.patch(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
 }
