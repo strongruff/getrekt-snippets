@@ -1,0 +1,1363 @@
+{
+	"callbacks.register": {
+		"prefix": "callbacks.register",
+		"body": [
+			"callbacks.register(${1:name}, ${2:callback})"
+		],
+	},	
+	"callbacks.event_listener_register": {
+		"prefix": "callbacks.event_listener_register",
+		"body": [
+			"callbacks.event_listener_register(${1:name}, ${2:callback}, ${3:opt-server_side})"
+		],
+	},	
+	"lua.unload": {
+		"prefix": "lua.unload",
+		"body": [
+			"lua.unload()"
+		],
+	},	
+	"lua.get_name": {
+		"prefix": "lua.get_name",
+		"body": [
+			"lua.get_name()"
+		],
+	},	
+	"client.log": {
+		"prefix": "client.log",
+		"body": [
+			"client.log(${1:text}, ${2:r}, ${3:g}, ${4:b}, ${5:a})"
+		],
+	},
+	"client.chat_print": {
+		"prefix": "client.chat_print",
+		"body": [
+			"client.chat_print(${1:player_index}, ${2:filter}, ${3:text})"
+		],
+	},
+	"client.b_send_packet": {
+		"prefix": "client.b_send_packet",
+		"body": [
+			"client.b_send_packet(${1:value})"
+		],
+	},
+	"client.exec": {
+		"prefix": "client.exec",
+		"body": [
+			"client.exec(${1:command})"
+		],
+	},
+	"client.userid_to_entindex": {
+		"prefix": "client.userid_to_entindex",
+		"body": [
+			"client.userid_to_entindex(${1:userid})"
+		],
+	},
+	"client.random_int": {
+		"prefix": "client.random_int",
+		"body": [
+			"client.random_int(${1:min}, ${2:max})"
+		],
+	},
+	"client.random_float": {
+		"prefix": "client.random_float",
+		"body": [
+			"client.random_float(${1:min}, ${2:max})"
+		],
+	},
+	"client.screen_size": {
+		"prefix": "client.screen_size",
+		"body": [
+			"client.screen_size()"
+		],
+	},
+	"client.visible": {
+		"prefix": "client.visible",
+		"body": [
+			"client.visible(${1:ent_index}, ${2:ent_hitbox})"
+		],
+	},
+	"client.visible_point": {
+		"prefix": "client.visible_point",
+		"body": [
+			"client.visible_point(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"client.trace_line": {
+		"prefix": "client.trace_line",
+		"body": [
+			"client.trace_line(${1:skip_ent_index}, ${2:from_x}, ${3:from_y}, ${4:from_z}, ${5:to_x}, ${6:to_y}, ${7:to_z})"
+		],
+	},
+	"client.latency": {
+		"prefix": "client.latency",
+		"body": [
+			"client.latency()"
+		],
+	},
+	"client.get_camera_angles": {
+		"prefix": "client.get_camera_angles",
+		"body": [
+			"client.get_camera_angles()"
+		],
+	},
+	"client.set_camera_angles": {
+		"prefix": "client.set_camera_angles",
+		"body": [
+			"client.set_camera_angles(${1:pitch}, ${2:yaw})"
+		],
+	},
+	"client.timestamp": {
+		"prefix": "client.timestamp",
+		"body": [
+			"client.timestamp()"
+		],
+	},
+	"client.client_time_since_inject": {
+		"prefix": "client.client_time_since_inject",
+		"body": [
+			"client.client_time_since_inject()"
+		]
+	},
+	"client.eye_position": {
+		"prefix": "client.eye_position",
+		"body": [
+			"client.eye_position()"
+		],
+	},
+	"client.set_clan_tag": {
+		"prefix": "client.set_clan_tag",
+		"body": [
+			"client.set_clan_tag(${1:text})"
+		],
+	},
+	"client.set_name": {
+		"prefix": "client.set_name",
+		"body": [
+			"client.set_name(${1:text})"
+		],
+	},
+	"engine.is_connected": {
+		"prefix": "engine.is_connected",
+		"body": [
+			"engine.is_connected()"
+		],
+	},
+	"engine.is_hltv": {
+		"prefix": "engine.is_hltv",
+		"body": [
+			"engine.is_hltv()"
+		],
+	},
+	"engine.is_in_game": {
+		"prefix": "engine.is_in_game",
+		"body": [
+			"engine.is_in_game()"
+		],
+	},
+	"engine.is_paused": {
+		"prefix": "engine.is_paused",
+		"body": [
+			"engine.is_paused()"
+		],
+	},
+	"engine.is_playing_demo": {
+		"prefix": "engine.is_playing_demo",
+		"body": [
+			"engine.is_playing_demo()"
+		],
+	},
+	"engine.is_recording_demo": {
+		"prefix": "engine.is_recording_demo",
+		"body": [
+			"engine.is_recording_demo()"
+		],
+	},
+	"engine.is_taking_screenshot": {
+		"prefix": "engine.is_taking_screenshot",
+		"body": [
+			"engine.is_taking_screenshot()"
+		],
+	},
+	"cmd.buttons": {
+		"prefix": "cmd.buttons",
+		"body": [
+			"cmd.buttons(${1:value})"
+		],
+	},
+	"cmd.mousedx": {
+		"prefix": "cmd.mousedx",
+		"body": [
+			"cmd.mousedx(${1:value})"
+		],
+	},
+	"cmd.mousedy": {
+		"prefix": "cmd.mousedy",
+		"body": [
+			"cmd.mousedy(${1:value})"
+		],
+	},
+	"cmd.upmove": {
+		"prefix": "cmd.upmove",
+		"body": [
+			"cmd.upmove(${1:value})"
+		],
+	},
+	"cmd.sidemove": {
+		"prefix": "cmd.sidemove",
+		"body": [
+			"cmd.sidemove(${1:value})"
+		],
+	},
+	"cmd.forwardmove": {
+		"prefix": "cmd.forwardmove",
+		"body": [
+			"cmd.forwardmove(${1:value})"
+		],
+	},
+	"cmd.aimdirection": {
+		"prefix": "cmd.aimdirection",
+		"body": [
+			"cmd.aimdirection(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"cmd.impulse": {
+		"prefix": "cmd.impulse",
+		"body": [
+			"cmd.impulse(${1:value})"
+		],
+	},
+	"cmd.weaponselect": {
+		"prefix": "cmd.weaponselect",
+		"body": [
+			"cmd.weaponselect(${1:value})"
+		],
+	},
+	"cmd.predicted": {
+		"prefix": "cmd.predicted",
+		"body": [
+			"cmd.predicted(${1:value})"
+		],
+	},
+	"input.get_mouse_pos": {
+		"prefix": "input.get_mouse_pos",
+		"body": [
+			"input.get_mouse_pos()"
+		],
+	},
+	"input.is_button_down": {
+		"prefix": "input.is_button_down",
+		"body": [
+			"input.is_button_down(${1:ButtonCode})"
+		],
+	},
+	"cvar.get_string": {
+		"prefix": "cvar.get_string",
+		"body": [
+			"cvar.get_string(${1:cvar})"
+		],
+	},
+	"cvar.get_int": {
+		"prefix": "cvar.get_int",
+		"body": [
+			"cvar.get_int(${1:cvar})"
+		],
+	},
+	"cvar.get_float": {
+		"prefix": "cvar.get_float",
+		"body": [
+			"cvar.get_float(${1:cvar})"
+		],
+	},
+	"cvar.get_bool": {
+		"prefix": "cvar.get_bool",
+		"body": [
+			"cvar.get_bool(${1:cvar})"
+		],
+	},
+	"cvar.get_color": {
+		"prefix": "cvar.get_color",
+		"body": [
+			"cvar.get_color(${1:cvar})"
+		],
+	},
+	"cvar.set_string": {
+		"prefix": "cvar.set_string",
+		"body": [
+			"cvar.set_string(${1:cvar}, ${2:value}, ${3:callbacks_size})"
+		],
+	},
+	"cvar.set_int": {
+		"prefix": "cvar.set_int",
+		"body": [
+			"cvar.set_int(${1:cvar}, ${2:value}, ${3:callbacks_size})"
+		],
+	},
+	"cvar.set_float": {
+		"prefix": "cvar.set_float",
+		"body": [
+			"cvar.set_float(${1:cvar}, ${2:value}, ${3:callbacks_size})"
+		],
+	},
+	"cvar.set_bool": {
+		"prefix": "cvar.set_bool",
+		"body": [
+			"cvar.set_bool(${1:cvar}, ${2:value}, ${3:callbacks_size})"
+		],
+	},
+	"cvar.set_color": {
+		"prefix": "cvar.set_color",
+		"body": [
+			"cvar.set_color(${1:cvar}, ${2:r}, ${3:g}, ${4:b}, ${5:a}, ${6:callbacks_size})"
+		],
+	},
+	"entity.get_all": {
+		"prefix": "entity.get_all",
+		"body": [
+			"entity.get_all(${1:opt-classname})"
+		],
+	},
+	"entity.get_players": {
+		"prefix": "entity.get_players",
+		"body": [
+			"entity.get_players(${1:opt-enemies_only})"
+		],
+	},
+	"entity.get_classname": {
+		"prefix": "entity.get_classname",
+		"body": [
+			"entity.get_classname(${1:ent_index})"
+		],
+	},
+	"entity.get_local_player": {
+		"prefix": "entity.get_local_player",
+		"body": [
+			"entity.get_local_player()"
+		],
+	},
+	"entity.get_game_rules": {
+		"prefix": "entity.get_game_rules",
+		"body": [
+			"entity.get_game_rules()"
+		],
+	},
+	"entity.get_player_resource": {
+		"prefix": "entity.get_player_resource",
+		"body": [
+			"entity.get_player_resource()"
+		],
+	},
+	"entity.get_player_name": {
+		"prefix": "entity.get_player_name",
+		"body": [
+			"entity.get_player_name(${1:ent_index})"
+		],
+	},
+	"entity.get_player_weapon_id": {
+		"prefix": "entity.get_player_weapon_id",
+		"body": [
+			"entity.get_player_weapon_id(${1:ent_index})"
+		],
+	},
+	"entity.get_steam64": {
+		"prefix": "entity.get_steam64",
+		"body": [
+			"entity.get_steam64(${1:ent_index})"
+		],
+	},
+	"entity.get_buylog": {
+		"prefix": "entity.get_buylog",
+		"body": [
+			"entity.get_buylog(${1:ent_index})"
+		],
+	},
+	"entity.get_bounding_box": {
+		"prefix": "entity.get_bounding_box",
+		"body": [
+			"entity.get_bounding_box(${1:ent_index})"
+		],
+	},
+	"entity.get_move_type": {
+		"prefix": "entity.get_move_type",
+		"body": [
+			"entity.get_move_type(${1:ent_index})"
+		],
+	},
+	"entity.get_abs_origin": {
+		"prefix": "entity.get_abs_origin",
+		"body": [
+			"entity.get_abs_origin(${1:ent_index})"
+		],
+	},
+	"entity.set_abs_origin": {
+		"prefix": "entity.set_abs_origin",
+		"body": [
+			"entity.set_abs_origin(${1:ent_index}, ${2:x}, ${3:y}, ${4:z})"
+		],
+	},
+	"entity.get_abs_angles": {
+		"prefix": "entity.get_abs_angles",
+		"body": [
+			"entity.get_abs_angles(${1:ent_index})"
+		],
+	},
+	"entity.set_abs_angles": {
+		"prefix": "entity.set_abs_angles",
+		"body": [
+			"entity.set_abs_angles(${1:ent_index}, ${2:x}, ${3:y}, ${4:z})"
+		],
+	},
+	"entity.get_sequence_activity": {
+		"prefix": "entity.get_sequence_activity",
+		"body": [
+			"entity.get_sequence_activity(${1:ent_index}, ${2:sequence})"
+		],
+	},
+	"entity.is_enemy": {
+		"prefix": "entity.is_enemy",
+		"body": [
+			"entity.is_enemy(${1:ent_index})"
+		],
+	},
+	"entity.is_alive": {
+		"prefix": "entity.is_alive",
+		"body": [
+			"entity.is_alive(${1:ent_index})"
+		],
+	},
+	"entity.is_dormant": {
+		"prefix": "entity.is_dormant",
+		"body": [
+			"entity.is_dormant(${1:ent_index})"
+		],
+	},
+	"entity.hitbox_position": {
+		"prefix": "entity.hitbox_position",
+		"body": [
+			"entity.hitbox_position(${1:ent_index}, ${2:hitbox})"
+		],
+	},
+	"entity.set_highlight": {
+		"prefix": "entity.set_highlight",
+		"body": [
+			"entity.set_highlight(${1:ent_index}, ${2:value})"
+		],
+	},
+	"entity.get_highlight": {
+		"prefix": "entity.get_highlight",
+		"body": [
+			"entity.get_highlight(${1:ent_index}, ${2:value})"
+		],
+	},
+	"entity.get_inventory": {
+		"prefix": "entity.get_inventory",
+		"body": [
+			"entity.get_inventory(${1:ent_index})"
+		],
+	},
+	"entity.get_prop": {
+		"prefix": "entity.get_prop",
+		"body": [
+			"entity.get_prop(${1:ent_index}, ${2:table}, ${3:prop}, ${4:opt-offset})"
+		],
+	},
+	"entity.set_prop": {
+		"prefix": "entity.set_prop",
+		"body": [
+			"entity.set_prop(${1:ent_index}, ${2:table}, ${3:prop}, ${4:opt-offset}, ${5:value})"
+		],
+	},
+	"globals.realtime": {
+		"prefix": "globals.realtime",
+		"body": [
+			"globals.realtime()"
+		],
+	},
+	"globals.curtime": {
+		"prefix": "globals.curtime",
+		"body": [
+			"globals.curtime()"
+		],
+	},
+	"globals.frametime": {
+		"prefix": "globals.frametime",
+		"body": [
+			"globals.frametime()"
+		],
+	},
+	"globals.absoluteframetime": {
+		"prefix": "globals.absoluteframetime",
+		"body": [
+			"globals.absoluteframetime()"
+		],
+	},
+	"globals.maxplayers": {
+		"prefix": "globals.maxplayers",
+		"body": [
+			"globals.maxplayers()"
+		],
+	},
+	"globals.tickcount": {
+		"prefix": "globals.tickcount",
+		"body": [
+			"globals.tickcount()"
+		],
+	},
+	"globals.tickinterval": {
+		"prefix": "globals.tickinterval",
+		"body": [
+			"globals.tickinterval()"
+		],
+	},
+	"globals.framecount": {
+		"prefix": "globals.framecount",
+		"body": [
+			"globals.framecount()"
+		],
+	},
+	"globals.mapname": {
+		"prefix": "globals.mapname",
+		"body": [
+			"globals.mapname()"
+		],
+	},
+	"globals.lastoutgoingcommand": {
+		"prefix": "globals.lastoutgoingcommand",
+		"body": [
+			"globals.lastoutgoingcommand()"
+		],
+	},
+	"globals.ping": {
+		"prefix": "globals.ping",
+		"body": [
+			"globals.ping()"
+		],
+	},
+	"globals.get_server_ip": {
+		"prefix": "globals.get_server_ip",
+		"body": [
+			"globals.get_server_ip()"
+		],
+	},
+	"globals.at_target_yaw": {
+		"prefix": "globals.at_target_yaw",
+		"body": [
+			"globals.at_target_yaw()"
+		],
+	},
+	"globals.auto_dir_aa": {
+		"prefix": "globals.auto_dir_aa",
+		"body": [
+			"globals.auto_dir_aa()"
+		],
+	},
+	"gui.new_checkbox": {
+		"prefix": "gui.new_checkbox",
+		"body": [
+			"gui.new_checkbox(${1:name}, ${2:value})"
+		],
+	},
+	"gui.new_slider_int": {
+		"prefix": "gui.new_slider_int",
+		"body": [
+			"gui.new_slider_int(${1:name}, ${2:min}, ${3:max}, ${4:opt-value})"
+		],
+	},
+	"gui.new_slider_float": {
+		"prefix": "gui.new_slider_float",
+		"body": [
+			"gui.new_slider_float(${1:name}, ${2:min}, ${3:max}, ${4:opt-value})"
+		],
+	},
+	"gui.new_color_picker": {
+		"prefix": "gui.new_color_picker",
+		"body": [
+			"gui.new_color_picker(${1:name}, ${2:opt-alpha}, ${3:opt-r}, ${4:opt-g}, ${5:opt-b}, ${6:opt-a}, ${7:opt-r2}, ${8:opt-g2}, ${9:opt-b2}, ${10:opt-a2}, ${11:opt-colored}, ${12:opt-name1}, ${13:opt-name2})"
+		],
+	},
+	"gui.new_color_picker_player": {
+		"prefix": "gui.new_color_picker_player",
+		"body": [
+			"gui.new_color_picker_player(${1:name}, ${2:alpha}, ${3:r}, ${4:g}, ${5:b}, ${6:a}, ${7:r2}, ${8:g2}, ${9:b2}, ${10:a2}, ${11:r3}, ${12:g3}, ${13:b3}, ${14:a3}, ${15:r4}, ${16:g4}, ${17:b4}, ${18:a4})"
+		],
+	},
+	"gui.new_button": {
+		"prefix": "gui.new_button",
+		"body": [
+			"gui.new_button(${1:name}, ${2:callback})"
+		],
+	},
+	"gui.new_button_bind": {
+		"prefix": "gui.new_button_bind",
+		"body": [
+			"gui.new_button_bind(${1:name}, ${2:opt-button_code})"
+		],
+	},
+	"gui.new_text_input": {
+		"prefix": "gui.new_text_input",
+		"body": [
+			"gui.new_text_input(${1:name}, ${2:opt-text})"
+		],
+	},
+	"gui.new_menu_text": {
+		"prefix": "gui.new_menu_text",
+		"body": [
+			"gui.new_menu_text(${1:text})"
+		],
+	},
+	"gui.new_combobox": {
+		"prefix": "gui.new_combobox",
+		"body": [
+			"gui.new_combobox(${1:name}, ${2:...})"
+		],
+	},
+	"gui.new_list": {
+		"prefix": "gui.new_list",
+		"body": [
+			"gui.new_list(${1:name}, ${2:...})"
+		],
+	},
+	"gui.new_multiselectbox": {
+		"prefix": "gui.new_multiselectbox",
+		"body": [
+			"gui.new_multiselectbox(${1:name}, ${2:...})"
+		],
+	},
+	"gui.new_image": {
+		"prefix": "gui.new_image",
+		"body": [
+			"gui.new_image(${1:name}, ${2:id}, ${3:opt-width}, ${4:opt-height}, ${5:opt-r}, ${6:opt-g}, ${7:opt-b}, ${8:opt-a}, ${9:opt-rounding}, ${10:opt-rounding_value})"
+		],
+	},
+	"gui.download_image": {
+		"prefix": "gui.download_image",
+		"body": [
+			"gui.download_image(${1:url})"
+		],
+	},
+	"gui.is_menu_open": {
+		"prefix": "gui.is_menu_open",
+		"body": [
+			"gui.is_menu_open()"
+		],
+	},
+	"gui.set_lua_name": {
+		"prefix": "gui.set_lua_name",
+		"body": [
+			"gui.set_lua_name(${1:name})"
+		],
+	},
+	"gui.new_same_line": {
+		"prefix": "gui.new_same_line",
+		"body": [
+			"gui.new_same_line()"
+		],
+	},
+	"gui.get": {
+		"prefix": "gui.get",
+		"body": [
+			"gui.get(${1:id})"
+		],
+	},	
+	"gui.set": {
+		"prefix": "gui.set",
+		"body": [
+			"gui.set(${1:id}, ${2:...})"
+		],
+	},	
+	"gui.remove_element": {
+		"prefix": "gui.remove_element",
+		"body": [
+			"gui.remove_element(${1:id})"
+		],
+	},
+	"gui.item_id": {
+		"prefix": "gui.item_id",
+		"body": [
+			"gui.item_id(${1:name})"
+		],
+	},
+	"gui.get_item": {
+		"prefix": "gui.get_item",
+		"body": [
+			"gui.get_item(${1:id})"
+		],
+	},
+	"gui.set_item": {
+		"prefix": "gui.set_item",
+		"body": [
+			"gui.set_item(${1:id}, ${2:...})"
+		],
+	},
+	"gui.menu_size": {
+		"prefix": "gui.menu_size",
+		"body": [
+			"gui.menu_size()"
+		],
+	},
+	"gui.menu_pos": {
+		"prefix": "gui.menu_pos",
+		"body": [
+			"gui.menu_pos()"
+		],
+	},
+	"render.line": {
+		"prefix": "render.line",
+		"body": [
+			"render.line(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:opt-thicknes})"
+		],
+	},
+	"render.text": {
+		"prefix": "render.text",
+		"body": [
+			"render.text(${1:text}, ${2:x}, ${3:y}, ${4:size}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:opt-center}, ${10:opt-outline}, ${11:opt-font})"
+		],
+	},
+	"render.text_size": {
+		"prefix": "render.text_size",
+		"body": [
+			"render.text_size(${1:text}, ${2:size}, ${3:opt-font})"
+		],
+	},
+	"render.new_font": {
+		"prefix": "render.new_font",
+		"body": [
+			"render.new_font(${1:font_name}, ${2:size})"
+		],
+	},
+	"render.get_font_default": {
+		"prefix": "render.get_font_default",
+		"body": [
+			"render.get_font_default()"
+		],
+	},
+	"render.get_font_icons": {
+		"prefix": "render.get_font_icons",
+		"body": [
+			"render.get_font_icons()"
+		],
+	},
+	"render.box": {
+		"prefix": "render.box",
+		"body": [
+			"render.box(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:opt-thicknes}, ${10:opt-rounding})"
+		],
+	},
+	"render.filled_box": {
+		"prefix": "render.filled_box",
+		"body": [
+			"render.filled_box(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:opt-thicknes}, ${10:opt-rounding})"
+		],
+	},
+	"render.filled_box_gradient": {
+		"prefix": "render.filled_box_gradient",
+		"body": [
+			"render.filled_box_gradient(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:r2}, ${10:g2}, ${11:b2}, ${12:a2}, ${13:r3}, ${14:g3}, ${15:b3}, ${16:a3}, ${17:r4}, ${18:g4}, ${19:b4}, ${20:a4})"
+		],
+	},
+	"render.coal_box": {
+		"prefix": "render.coal_box",
+		"body": [
+			"render.coal_box(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:opt-thicknes})"
+		],
+	},
+	"render.triangle": {
+		"prefix": "render.triangle",
+		"body": [
+			"render.triangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:r}, ${8:g}, ${9:b}, ${10:a}, ${11:opt-thicknes})"
+		],
+	},
+	"render.filled_triangle": {
+		"prefix": "render.filled_triangle",
+		"body": [
+			"render.filled_triangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:r}, ${8:g}, ${9:b}, ${10:a})"
+		],
+	},
+	"render.circle": {
+		"prefix": "render.circle",
+		"body": [
+			"render.circle(${1:x}, ${2:y}, ${3:radius}, ${4:points}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:opt-thicknes})"
+		],
+	},
+	"render.filled_circle": {
+		"prefix": "render.filled_circle",
+		"body": [
+			"render.filled_circle(${1:x}, ${2:y}, ${3:radius}, ${4:points}, ${5:r}, ${6:g}, ${7:b}, ${8:a})"
+		],
+	},
+	"render.circle_3d": {
+		"prefix": "render.circle_3d",
+		"body": [
+			"render.circle_3d(${1:x}, ${2:y}, ${3:z}, ${4:radius}, ${5:points}, ${6:r}, ${7:g}, ${8:b}, ${9:a}, ${10:opt-animated})"
+		],
+	},
+	"render.world_to_screen": {
+		"prefix": "render.world_to_screen",
+		"body": [
+			"render.world_to_screen(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"render.poly": {
+		"prefix": "render.poly",
+		"body": [
+			"render.poly(${1:r}, ${2:g}, ${3:b}, ${4:a}, ${5:closed}, ${6:thickness})"
+		],
+	},
+	"render.poly_push_back": {
+		"prefix": "render.poly_push_back",
+		"body": [
+			"render.poly_push_back(${1:x}, ${2:y})"
+		],
+	},
+	"render.image": {
+		"prefix": "render.image",
+		"body": [
+			"render.image(${1:x}, ${2:y}, ${3:id}, ${4:width}, ${5:height}, ${6:opt-r}, ${7:opt-g}, ${8:opt-b}, ${9:opt-a})"
+		],
+	},
+	"render.make_image": {
+		"prefix": "render.make_image",
+		"body": [
+			"render.make_image(${1:data})"
+		],
+	},
+	"model.get_name": {
+		"prefix": "model.get_name",
+		"body": [
+			"model.get_name()"
+		],
+	},
+	"model.get_entity": {
+		"prefix": "model.get_entity",
+		"body": [
+			"model.get_entity()"
+		],
+	},
+	"model.draw_extra_pass": {
+		"prefix": "model.draw_extra_pass",
+		"body": [
+			"model.draw_extra_pass()"
+		],
+	},
+	"model.set_blend": {
+		"prefix": "model.set_blend",
+		"body": [
+			"model.set_blend(${1:blend})"
+		],
+	},
+	"material.create": {
+		"prefix": "material.create",
+		"body": [
+			"material.create(${1:name}, ${2:data})"
+		],
+	},
+	"material.find": {
+		"prefix": "material.find",
+		"body": [
+			"material.find(${1:material_name}, ${2:group_name})"
+		],
+	},
+	"helpers.vec_dist_to": {
+		"prefix": "helpers.vec_dist_to",
+		"body": [
+			"helpers.vec_dist_to(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})"
+		],
+	},
+	"helpers.vec_dist_to_sqr": {
+		"prefix": "helpers.vec_dist_to_sqr",
+		"body": [
+			"helpers.vec_dist_to_sqr(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})"
+		],
+	},
+	"helpers.vec_dist_to_2d": {
+		"prefix": "helpers.vec_dist_to_2d",
+		"body": [
+			"helpers.vec_dist_to_2d(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})"
+		],
+	},
+	"helpers.vec_cross": {
+		"prefix": "helpers.vec_cross",
+		"body": [
+			"helpers.vec_cross(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})"
+		],
+	},
+	"helpers.vec_dot": {
+		"prefix": "helpers.vec_dot",
+		"body": [
+			"helpers.vec_dot(${1:x}, ${2:y}, ${3:z}, ${4:x2}, ${5:y2}, ${6:z2})"
+		],
+	},
+	"helpers.vec_normalize": {
+		"prefix": "helpers.vec_normalize",
+		"body": [
+			"helpers.vec_normalize(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"helpers.vec_length": {
+		"prefix": "helpers.vec_length",
+		"body": [
+			"helpers.vec_length(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"helpers.vec_length_sqr": {
+		"prefix": "helpers.vec_length_sqr",
+		"body": [
+			"helpers.vec_length_sqr(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"helpers.vec_length_2d": {
+		"prefix": "helpers.vec_length_2d",
+		"body": [
+			"helpers.vec_length_2d(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"helpers.vec_vector_angles": {
+		"prefix": "helpers.vec_vector_angles",
+		"body": [
+			"helpers.vec_vector_angles(${1:x}, ${2:y}, ${3:z})"
+		],
+	},
+	"config.save": {
+		"prefix": "config.save",
+		"body": [
+			"config.save(${1:name})"
+		],
+	},
+	"config.load": {
+		"prefix": "config.load",
+		"body": [
+			"config.load(${1:name})"
+		],
+	},
+	"config.list": {
+		"prefix": "config.list",
+		"body": [
+			"config.list()"
+		],
+	},
+	"config.refresh_cfg_list": {
+		"prefix": "config.refresh_cfg_list",
+		"body": [
+			"config.refresh_cfg_list()"
+		],
+	},
+	"config.add_and_save": {
+		"prefix": "config.add_and_save",
+		"body": [
+			"config.add_and_save(${1:name})"
+		],
+	},
+	"resolver.force_body_yaw": {
+		"prefix": "resolver.force_body_yaw",
+		"body": [
+			"resolver.force_body_yaw(${1:yaw})"
+		],
+	},
+	"resolver.force_pitch": {
+		"prefix": "resolver.force_pitch",
+		"body": [
+			"resolver.force_pitch(${1:pitch})"
+		],
+	},
+	"event:is_empty": {
+		"prefix": "event:is_empty",
+		"body": [
+			"event:is_empty()"
+		],
+	},
+	"event.is_empty": {
+		"prefix": "event.is_empty",
+		"body": [
+			"event.is_empty(${1:event})"
+		],
+	},
+	"event:is_local": {
+		"prefix": "event:is_local",
+		"body": [
+			"event:is_local()"
+		],
+	},
+	"event.is_local": {
+		"prefix": "event.is_local",
+		"body": [
+			"event.is_local(${1:event})"
+		],
+	},
+	"event:is_reliable": {
+		"prefix": "event:is_reliable",
+		"body": [
+			"event:is_reliable()"
+		],
+	},
+	"event.is_reliable": {
+		"prefix": "event.is_reliable",
+		"body": [
+			"event.is_reliable(${1:event})"
+		],
+	},
+	"event:get_bool": {
+		"prefix": "event:get_bool",
+		"body": [
+			"event:get_bool(${1:key_name})"
+		],
+	},
+	"event.get_bool": {
+		"prefix": "event.get_bool",
+		"body": [
+			"event.get_bool(${1:event}, ${2:key_name})"
+		],
+	},
+	"event:get_int": {
+		"prefix": "event:get_int",
+		"body": [
+			"event:get_int(${1:key_name})"
+		],
+	},
+	"event.get_int": {
+		"prefix": "event.get_int",
+		"body": [
+			"event.get_int(${1:event}, ${2:key_name})"
+		],
+	},
+	"event:get_uint64": {
+		"prefix": "event:get_uint64",
+		"body": [
+			"event:get_uint64(${1:key_name})"
+		],
+	},
+	"event.get_uint64": {
+		"prefix": "event.get_uint64",
+		"body": [
+			"event.get_uint64(${1:event}, ${2:key_name})"
+		],
+	},
+	"event:get_float": {
+		"prefix": "event:get_float",
+		"body": [
+			"event:get_float(${1:key_name})"
+		],
+	},
+	"event.get_float": {
+		"prefix": "event.get_float",
+		"body": [
+			"event.get_float(${1:event}, ${2:key_name})"
+		],
+	},
+	"event:get_string": {
+		"prefix": "event:get_string",
+		"body": [
+			"event:get_string(${1:key_name})"
+		],
+	},
+	"event.get_string": {
+		"prefix": "event.get_string",
+		"body": [
+			"event.get_string(${1:event}, ${2:key_name})"
+		],
+	},
+	"event:set_bool": {
+		"prefix": "event:set_bool",
+		"body": [
+			"event:set_bool(${1:key_name}, ${2:new_value})"
+		],
+	},
+	"event.set_bool": {
+		"prefix": "event.set_bool",
+		"body": [
+			"event.set_bool(${1:event}, ${2:key_name}, ${3:new_value})"
+		],
+	},
+	"event:set_int": {
+		"prefix": "event:set_int",
+		"body": [
+			"event:set_int(${1:key_name}, ${2:new_value})"
+		],
+	},
+	"event.set_int": {
+		"prefix": "event.set_int",
+		"body": [
+			"event.set_int(${1:event}, ${2:key_name}, ${3:new_value})"
+		],
+	},
+	"event:set_uint64": {
+		"prefix": "event:set_uint64",
+		"body": [
+			"event:set_uint64(${1:key_name}, ${2:new_value})"
+		],
+	},
+	"event.set_uint64": {
+		"prefix": "event.set_uint64",
+		"body": [
+			"event.set_uint64(${1:event}, ${2:key_name}, ${3:new_value})"
+		],
+	},
+	"event:set_float": {
+		"prefix": "event:set_float",
+		"body": [
+			"event:set_float(${1:key_name}, ${2:new_value})"
+		],
+	},
+	"event.set_float": {
+		"prefix": "event.set_float",
+		"body": [
+			"event.set_float(${1:event}, ${2:key_name}, ${3:new_value})"
+		],
+	},
+	"event:set_string": {
+		"prefix": "event:set_string",
+		"body": [
+			"event:set_string(${1:key_name}, ${2:new_value})"
+		],
+	},
+	"event.set_string": {
+		"prefix": "event.set_string",
+		"body": [
+			"event.set_string(${1:event}, ${2:key_name}, ${3:new_value})"
+		],
+	},
+	"weapon:can_fire": {
+		"prefix": "weapon:can_fire",
+		"body": [
+			"weapon:can_fire()"
+		],
+	},
+	"weapon.can_fire": {
+		"prefix": "weapon.can_fire",
+		"body": [
+			"weapon.can_fire(${1:weapon})"
+		],
+	},
+	"weapon:get_inaccuracy": {
+		"prefix": "weapon:get_inaccuracy",
+		"body": [
+			"weapon:get_inaccuracy()"
+		],
+	},
+	"weapon.get_inaccuracy": {
+		"prefix": "weapon.get_inaccuracy",
+		"body": [
+			"weapon.get_inaccuracy(${1:weapon})"
+		],
+	},
+	"weapon:get_spread": {
+		"prefix": "weapon:get_spread",
+		"body": [
+			"weapon:get_spread()"
+		],
+	},
+	"weapon.get_spread": {
+		"prefix": "weapon.get_spread",
+		"body": [
+			"weapon.get_spread(${1:weapon})"
+		],
+	},
+	"IMaterial:color_modulate": {
+		"prefix": "IMaterial:color_modulate",
+		"body": [
+			"IMaterial:color_modulate(${1:r}, ${2:g}, ${3:b})"
+		],
+	},
+	"IMaterial.color_modulate": {
+		"prefix": "IMaterial.color_modulate",
+		"body": [
+			"IMaterial.color_modulate(${1:material}, ${2:r}, ${3:g}, ${4:b})"
+		],
+	},"IMaterial:alpha_modulate": {
+		"prefix": "IMaterial:alpha_modulate",
+		"body": [
+			"IMaterial:alpha_modulate(${1:a})"
+		],
+	},
+	"IMaterial.alpha_modulate": {
+		"prefix": "IMaterial.alpha_modulate",
+		"body": [
+			"IMaterial.alpha_modulate(${1:material}, ${2:a})"
+		],
+	},"IMaterial:force_material": {
+		"prefix": "IMaterial:force_material",
+		"body": [
+			"IMaterial:force_material()"
+		],
+	},
+	"IMaterial.force_material": {
+		"prefix": "IMaterial.force_material",
+		"body": [
+			"IMaterial.force_material(${1:material})"
+		],
+	},
+	"response:status": {
+		"prefix": "response:status",
+		"body": [
+			"response:status()"
+		],
+	},
+	"response.status": {
+		"prefix": "response.status",
+		"body": [
+			"response.timed_out(${1:response})"
+		],
+	},
+	"response:body": {
+		"prefix": "response:body",
+		"body": [
+			"response:body()"
+		],
+	},
+	"response.body": {
+		"prefix": "response.body",
+		"body": [
+			"response.body(${1:response})"
+		],
+	},
+	"response:headers": {
+		"prefix": "response:headers",
+		"body": [
+			"response:headers()"
+		],
+	},
+	"response.headers": {
+		"prefix": "response.headers",
+		"body": [
+			"response.headers(${1:response})"
+		],
+	},
+	"response:timed_out": {
+		"prefix": "response:timed_out",
+		"body": [
+			"response:timed_out()"
+		],
+	},
+	"response.timed_out": {
+		"prefix": "response.timed_out",
+		"body": [
+			"response.timed_out(${1:response})"
+		],
+	},
+	"arg:get": {
+		"prefix": "arg:get",
+		"body": [
+			"arg:get()"
+		],
+	},
+	"arg.get": {
+		"prefix": "arg.get",
+		"body": [
+			"arg.get(${1:arg})"
+		],
+	},
+	"arg:set": {
+		"prefix": "arg:set",
+		"body": [
+			"arg:set(${1:command})"
+		],
+	},
+	"arg.set": {
+		"prefix": "arg.set",
+		"body": [
+			"arg.set(${1:arg}, ${2:command})"
+		],
+	},
+	"panorama.eval": {
+		"prefix": "panorama.eval",
+		"body": [
+			"panorama.eval(${1:js}, ${2:opt-customPanel}, ${3:opt-customFile})"
+		],
+	},
+	"mem.alloc": {
+		"prefix": "mem.alloc",
+		"body": [
+			"mem.alloc(${1:size})"
+		],
+	},
+	"mem.free": {
+		"prefix": "mem.free",
+		"body": [
+			"mem.free(${1:ptr})"
+		],
+	},
+	"mem.get_module_base": {
+		"prefix": "mem.get_module_base",
+		"body": [
+			"mem.get_module_base(${1:module_name})"
+		],
+	},
+	"mem.find_pattern": {
+		"prefix": "mem.find_pattern",
+		"body": [
+			"mem.find_pattern(${1:module_name}, ${2:signature})"
+		],
+	},
+	"mem.create_interface": {
+		"prefix": "mem.create_interface",
+		"body": [
+			"mem.create_interface(${1:interfacename})"
+		],
+	},
+	"file.read": {
+		"prefix": "file.read",
+		"body": [
+			"file.read(${1:path})"
+		],
+	},
+	"file.write": {
+		"prefix": "file.write",
+		"body": [
+			"file.write(${1:path}, ${2:data})"
+		],
+	},
+	"file.append": {
+		"prefix": "file.append",
+		"body": [
+			"file.append(${1:path}, ${2:data})"
+		],
+	},
+	"http.request": {
+		"prefix": "http.request",
+		"body": [
+			"http.request(${1:method}, ${2:url}, ${3:opt-[options]}, ${4:callback})"
+		],
+	},
+	"http.get": {
+		"prefix": "http.get",
+		"body": [
+			"http.get(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+	"http.post": {
+		"prefix": "http.post",
+		"body": [
+			"http.post(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+	"http.head": {
+		"prefix": "http.head",
+		"body": [
+			"http.head(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+	"http.put": {
+		"prefix": "http.put",
+		"body": [
+			"http.put(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+	"http.delete": {
+		"prefix": "http.delete",
+		"body": [
+			"http.delete(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+	"http.options": {
+		"prefix": "http.options",
+		"body": [
+			"http.options(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+	"http.patch": {
+		"prefix": "http.patch",
+		"body": [
+			"http.patch(${1:url}, ${2:opt-[options]}, ${3:callback})"
+		],
+	},
+}
+
