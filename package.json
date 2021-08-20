@@ -1,0 +1,23 @@
+{
+    "publisher": "getrektio",
+    "name": "getrektio",
+    "displayName": "Getrekt snippets",
+    "description": "lua snippets for getrekt.io",
+    "repository": {"url": "for nigga beta"},
+    "version": "2.0.0",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "icon": "images/getrekt.png",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "lua",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
