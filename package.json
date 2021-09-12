@@ -3,8 +3,8 @@
     "name": "getrektio",
     "displayName": "Getrekt snippets",
     "description": "lua snippets for getrekt.io",
-    "repository": {"url": "for nigga beta"},
-    "version": "2.0.0",
+    "repository": {"url": "https://github.com/strongruff/getrekt-snippets"},
+    "version": "2.2.0",
     "engines": {
         "vscode": "^1.59.0"
     },
