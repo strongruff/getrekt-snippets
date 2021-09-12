@@ -26,4 +26,12 @@ Added icon
 
 Added things from latest api update
 
+### 2.1.0
+
+Added things from latest api update
+
+### 2.2.0
+
+Added panorama.open
+
 -----------------------------------------------------------------------------------------------------------
