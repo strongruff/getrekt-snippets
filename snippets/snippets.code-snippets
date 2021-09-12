@@ -554,7 +554,7 @@
 	"gui.new_checkbox": {
 		"prefix": "gui.new_checkbox",
 		"body": [
-			"gui.new_checkbox(${1:name}, ${2:value})"
+			"gui.new_checkbox(${1:name}, ${2:opt-value})"
 		],
 	},
 	"gui.new_slider_int": {
@@ -1263,6 +1263,12 @@
 			"panorama.eval(${1:js}, ${2:opt-customPanel}, ${3:opt-customFile})"
 		],
 	},
+	"panorama.open": {
+		"prefix": "panorama.open",
+		"body": [
+			"panorama.open(${1:panel})"
+		],
+	},
 	"mem.alloc": {
 		"prefix": "mem.alloc",
 		"body": [
@@ -1359,5 +1365,16 @@
 			"http.patch(${1:url}, ${2:[options]}, ${3:callback})"
 		],
 	},
+	"http.cookie_container": {
+		"prefix": "http.cookie_container",
+		"body": [
+			"http.cookie_container(${1:allow_modification})"
+		],
+	},
+	"http.set_cookie": {
+		"prefix": "http.set_cookie",
+		"body": [
+			"http.set_cookie(${1:handle}, ${2:host}, ${3:url}, ${4:cookie})"
+		],
+	},
 }
-
